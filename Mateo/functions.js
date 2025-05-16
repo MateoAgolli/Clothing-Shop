@@ -67,7 +67,7 @@ function addToBag2() {
 
 function openwind() {
     if (addToBag1() && addToBag2()) {
-        window.open("../product-webpages/add_to_bag.html");
+        window.open("./add_to_bag.html");
     }
     else if (!addToBag2()) {
         alert("Please select the color");
