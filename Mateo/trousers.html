@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trousers</title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .title {
+            background-color: #893f45;
+            color: white;
+            font-size: 30px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        .product img {
+            width: 450px;
+            height: auto;
+            display: block;
+            margin: 0;
+        }
+
+        .product img:hover {
+            border: 2px solid black;
+        }
+
+        .product {
+            border: 2px solid white;
+        }
+
+        .description {
+            background-color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        .products {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .description h3,
+        .description h4 {
+            margin: 5px 0;
+        }
+
+        .buy {
+            margin: 15px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy:hover {
+            background-color: #0f4a1c;
+        }
+
+        .stars {
+            font-size: 1.5rem;
+            color: gold;
+        }
+
+        .title img {
+            width: 30px;
+            height: auto;
+        }
+
+        .title-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .shop-name-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class="shop-name-logo">
+            <img src="images/logoShop.png" style="width: 50px; height: auto;">
+            <span>
+                Clothing STORE
+            </span>
+        </div>
+        <div class="title-text">
+            Men's Trousers &#38; Jeans
+        </div>
+        <div class="title-images" style="display: flex; gap: 20px;">
+            <img src="images/search-icon.jpg">
+            <a href="./clothes.html" style="cursor: pointer;"><img src="images/shopping-cart-icon.png"> </a>
+            <button  style="background: none;
+            border: none;
+            outline: none;
+            box-shadow: none;cursor: pointer;
+            padding: 0;"><img src="images/profile-icon.png" id="open_login"></button>
+        </div>
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <a href="product-webpages/regular-fit-flat-front-trousers.html">
+                <img src="images/Regular Fit Flat Front Trousers.jpg" title="Regular Fit Flat Front Trousers">
+            </a>
+            <div class="description">
+                <h3>Regular Fit Flat Front Trousers</h3>
+                <h4>Best Selling</h4>
+                <p>3 colors</p>
+                <h4>35 Euro</h4>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <a href="product-webpages/regular-fit-flat-front-trousers.html">
+                    <button class="buy">Buy</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <a href="product-webpages/slim-fit-plain-chinos.html">
+                <img src="images/Slim Fit Plain Chinos.jpg" title="Slim Fit Plain Chinos">
+            </a>
+            <div class="description">
+                <h3>Slim Fit Plain Chinos</h3>
+                <h4>Best Selling</h4>
+                <p>3 colors</p>
+                <h4>42 Euro</h4>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <a href="product-webpages/slim-fit-plain-chinos.html">
+                    <button class="buy">Buy</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-webpages/slim-fit-cargo-trousers.html">
+                <img src="images/Slim Fit Cargo Trousers.jpg" title="Slim Fit Cargo Trousers">
+            </a>
+            <div class="description">
+                <h3>Slim Fit Cargo Trousers</h3>
+                <h4>On Sale</h4>
+                <p>4 colors</p>
+                <h4>
+                    <del>37 Euro</del> <span style="color: red;">25 Euro</span>
+                </h4>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9734;
+                </div>
+                <a href="product-webpages/slim-fit-cargo-trousers.html">
+                    <button class="buy">Buy</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-webpages/straight-fit-stretch-denim-jeans.html">
+                <img src="images/Straight Fit Stretch Denim Jeans.jpg" title="Straight Fit Stretch Denim Jeans">
+            </a>
+            <div class="description">
+                <h3>Straight Fit Stretch Denim Jeans</h3>
+                <h4>New</h4>
+                <p>2 colors</p>
+                <h4>28 Euro</h4>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9734;
+                </div>
+                <a href="product-webpages/straight-fit-stretch-denim-jeans.html">
+                    <button class="buy">Buy</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-webpages/tapered-fit-jeans.html">
+                <img src="images/Tapered Fit Jeans.jpg" title="Tapered Fit Jeans">
+            </a>
+            <div class="description">
+                <h3>Tapered Fit Jeans</h3>
+                <h4>On Sale</h4>
+                <p>3 colors</p>
+                <h4>
+                    <del>54 Euro</del> <span style="color: red;">42 Euro</span>
+                </h4>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <a href="product-webpages/tapered-fit-jeans.html">
+                    <button class="buy">Buy</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-webpages/slim-fit-stretch-jeans.html">
+                <img src="images/Slim Fit Stretch Jeans.jpg" title="Slim Fit Stretch Jeans">
+            </a>
+            <div class="description">
+                <h3>Slim Fit Stretch Jeans</h3>
+                <h4>New</h4>
+                <p>2 colors</p>
+                <h4>30 Euro</h4>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <a href="product-webpages/slim-fit-stretch-jeans.html">
+                    <button class="buy">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <dialog class="modal" id="modal" style="max-width: 600px;">
+        <form>
+            <div class="login_name" style="display: flex;">
+                <h1 style="margin-left: 160px; margin-right: 120px;height: 50px;">Login </h1>
+                <button style="width: 40px;height: 40px;" class="close_login">X</button>
+            </div>
+            <div class="login_username">
+                <input type="text" placeholder="Username" required style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+            </div>
+            <div class="login_password">
+                <input type="text" placeholder="Password" required style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+            </div>
+            <div class="finish_login"><button class="finish_login" style="margin-left: 150px;height: 40px;margin-bottom: 10px;">Login</button></div>
+            </form>
+    </dialog>
+    <script>
+         const body = document.body;
+         const modal=document.querySelector('#modal');
+         const openlogin=document.querySelector('#open_login');
+         const closelogin=document.querySelector('.close_login');
+    
+         openlogin.addEventListener("click",()=>{
+            modal.showModal();
+            body.classList.add("modal-open");
+            
+        })
+    
+        closelogin.addEventListener("click", ()=>{
+            modal.close();
+            body.classList.remove("modal-open");
+        })
+    </script>
+    
+</body>
+
+</html>

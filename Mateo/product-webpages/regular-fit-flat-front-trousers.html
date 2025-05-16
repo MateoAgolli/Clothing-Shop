@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Regular Fit Flat Front Trousers</title>
+
+    <script src="../functions.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="image">
+            <img src="../images/Regular Fit Flat Front Trousers.jpg" title="Regular Fit Flat Front Trousers">
+        </div>
+
+        <div class="description">
+            <h1 style="text-align: center;">Regular Fit Flat Front Trousers</h1>
+            <h3>Best selling</h3>
+            <h3>Description</h3>
+            <p style="margin-top: 0;">
+                These easy-care Farah trousers arrive in a regular fit to keep you looking your best no matter the
+                occasion. <br>
+                These trousers are provided with two side pockets and two back pockets to keep the garment stylish yet
+                functional. <br>
+                The button and zip fastening as well belt loops maximise comfort for the perfect fit.
+            </p>
+            <h3>Features</h3>
+            <ul style="margin-top: 0;">
+                <li>Regular fit</li>
+                <li>Two side pockets</li>
+                <li>Belt loops</li>
+                <li>Back pocket</li>
+                <li>Branding to the back</li>
+                <li>100% Polyester</li>
+            </ul>
+
+            <h3>Colors</h3>
+            <div class="colors">
+                <input type="radio" id="color-black" name="color">
+                <label class="circle" for="color-black" style="background-color: black;"></label>
+
+                <input type="radio" id="color-navy" name="color">
+                <label class="circle" for="color-navy" style="background-color: navy;"></label>
+
+                <input type="radio" id="color-silver" name="color">
+                <label class="circle" for="color-silver" style="background-color: silver;"></label>
+            </div>
+
+            <h3>Sizes</h3>
+            <div class="sizes">
+                <input type="radio" id="size-s" name="size">
+                <label class="size" for="size-s">S</label>
+
+                <input type="radio" id="size-m" name="size">
+                <label class="size" for="size-m">M</label>
+
+                <input type="radio" id="size-l" name="size">
+                <label class="size" for="size-l">L</label>
+
+                <input type="radio" id="size-xl" name="size">
+                <label class="size" for="size-xl">XL</label>
+            </div>
+
+            <h3 style="margin-bottom: 0;">Quantity</h3>
+            <div class="quantity">
+                <button type="button" class="quantity-btn" id="decrease" onclick="ndryshoSasiDecrease()">-</button>
+                <p style="margin-left: 5px; margin-right: 5px;" id="sasi">1</p>
+                <button type="button" class="quantity-btn" id="increase" onclick="ndryshoSasiIncrease()">+</button>
+            </div>
+            <h3>Price: <span id="price">35</span> Euro</h3>
+
+            <p style="font-weight: bold; font-size: 17px; margin-bottom: 0;" id="stock">Available Stock: 25</p>
+
+            <button id="add-to-bag" onclick="openwind()">ADD TO BAG</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

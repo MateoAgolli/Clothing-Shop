@@ -1,0 +1,119 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    width: 550px;
+    height: auto;
+    display: block;
+    border: 2px solid white;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.description {
+    width: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.circle,
+.size {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.size {
+    border-radius: 5px;
+    background-color: white;
+}
+
+.colors,
+.sizes {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="radio"]:checked+label {
+    border: 3px solid black;
+    background-color: lightgray;
+}
+
+.circle:hover,
+.size:hover {
+    background-color: lightgray;
+    border-color: black;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+}
+
+.quantity-btn:hover {
+    background-color: lightgray;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+#add-to-bag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 70px;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#add-to-bag:hover {
+    background-color: rgb(252, 196, 123);
+}

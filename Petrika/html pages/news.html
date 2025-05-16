@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: antiquewhite;">
+
+    <div style="display:flex; flex-direction:column; gap: 10px;">
+        <div id="latest-title">
+            <div style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-left: 0px;">
+                <p style="font-size:x-large; margin-left: 30px; font-weight: bolder;">Clothing Shop</p>
+                <img src="../../Mateo/images/logoShop.png" style="height: 50px; width: 50px;">
+            </div>
+            <p>The latest products &#9733 &#9733 &#9733 &#9733 &#9733</p>
+            <div style="display: flex; gap: 30px;" id="icons-container">
+                <img src="../../Mateo/images/search-icon.jpg" alt="">
+                <a href="../../Mateo/clothes.html" style="cursor: pointer;"><img
+                        src="../../Mateo/images/shopping-cart-icon.png"> </a>
+                <button style="background: none;
+                border: none;
+                outline: none;
+                box-shadow: none;cursor: pointer;
+                padding: 0;"><img src="../../Mateo/images/profile-icon.png" id="open_login"></button>
+            </div>
+
+        </div>
+
+
+        <div id="hyrje-news">
+            <img src="../homeImages/elegant-menswear-display-stockcake.webp">
+            <div style="display: flex; flex-direction: column;">
+                <p
+                    style="font-size: x-large; margin-bottom: 20%; font-weight: 800; margin-bottom: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    "Fashion that Defines You"</p>
+                <p style="font-size: large;">Here, you can find the newest arrivals in fashion, including <br> trendy
+                    jackets, cozy sweaters, and comfortable jeans.
+                    <br>Whether you're looking for casual t-shirts, stylish dresses, or accessories like hats and
+                    scarves,<br> there's something for everyone.
+                    <br> With fresh styles for every season, Clothing Shop is the perfect place to update <br> your
+                    wardrobe and stay on top of the latest trends.
+                </p>
+                <p
+                    style="font-size: x-large; margin-bottom: 20%; font-weight: 800; margin-bottom: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:#ff6a00">
+                    Stay on top of the trends</p>
+            </div>
+
+        </div>
+
+        <hr style="height: 10px; width: 100%;">
+
+        <div class="latest-container" style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+            <div class="latest">
+                <a href="../../Sadush/Faqja_produkteve/faqja_produkteve.html"><img
+                        src="../../Sadush/Imazhet/Shirt_2.avif" style="width: 372px;height: 482px;"></a>
+                <p>Classic Fit Stretch Jersey Polo Shirt</p>
+                <a href="../../Sadush/Faqja_produkteve/faqja_produkteve.html"><button>See all</button></a>
+            </div>
+            <div class="latest">
+                <a href="../../Sadush/Faqja_produkteve/faqja_produkteve.html"><img
+                        src="../../Sadush/Imazhet/Shirt_3.avif" style="width: 372px;height: 482px;"></a>
+                <p>Classic Fit Performance Polo Shirt</p>
+                <a href="../../Sadush/Faqja_produkteve/faqja_produkteve.html"><button>See all</button></a>
+            </div>
+            <div class="latest">
+                <a href="../../Sadush/Faqja_produkteve/faqja_produkteve.html"><img
+                        src="../../Sadush/Imazhet/Shirt_6.avif" style="width: 372px;height: 482px;"></a>
+                <p>Flag Embroidered Mesh Polo Shirt</p>
+                <a href="../../Sadush/Faqja_produkteve/faqja_produkteve.html"><button>See all</button></a>
+            </div>
+        </div>
+
+        <hr style="height: 10px; width: 100%;">
+
+        <div class="latest-container" style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+            <div class="latest">
+                <a href="../../Mateo/trousers.html"><img src="../../Mateo/images/Slim Fit Stretch Jeans.jpg"
+                        style="width: 372px;height: 482px;"></a>
+                <p>Slim Fit Stretch Jeans</p>
+                <a href="../../Mateo/trousers.html"><button>See all</button></a>
+            </div>
+            <div class="latest">
+                <a href="../../Mateo/trousers.html"><img src="../../Mateo/images/Straight Fit Stretch Denim Jeans.jpg"
+                        style="width: 372px;height: 482px;"></a>
+                <p>Straight Fit Stretch Denim Jeans</p>
+                <a href="../../Mateo/trousers.html"><button>See all</button></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <dialog class="modal" id="modal" style="max-width: 600px;">
+        <form>
+            <div class="login_name" style="display: flex;">
+                <h1 style="margin-left: 160px; margin-right: 120px;height: 50px;">Login </h1>
+                <button style="width: 40px;height: 40px;" class="close_login">X</button>
+            </div>
+            <div class="login_username">
+                <input type="text" placeholder="Username" required
+                    style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+            </div>
+            <div class="login_password">
+                <input type="text" placeholder="Password" required
+                    style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+            </div>
+            <div class="finish_login"><button class="finish_login"
+                    style="margin-left: 150px;height: 40px;margin-bottom: 10px;">Login</button></div>
+        </form>
+    </dialog>
+    <script>
+        const body = document.body;
+        const modal = document.querySelector('#modal');
+        const openlogin = document.querySelector('#open_login');
+        const closelogin = document.querySelector('.close_login');
+
+        openlogin.addEventListener("click", () => {
+            modal.showModal();
+            body.classList.add("modal-open");
+
+        })
+
+        closelogin.addEventListener("click", () => {
+            modal.close();
+            body.classList.remove("modal-open");
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="titulli" style="background-color: #893F45;">
+        <div class="logo" style="padding-right: 20px;">
+            <button class="buton_logo">
+            <a href="../Faqja_produkteve/faqja_produkteve.html"><img src="../../Mateo/images/logoShop.png"></a>
+            </button>
+        </div>
+       <div class="emri_dyqanit">
+        <h1 style="padding: 10px; color: white; padding-right: 250px ;" >Clothing STORE</h1>
+       </div> 
+       <div class="kreu"><h1 style="padding: 10px; color: white;" >Men's Shirts</h1></div>
+       <div class="search">
+        <button class="buton_search">
+        <img src="../../Mateo/images/search-icon.jpg">
+        </button>
+    </div>
+    <div class="bag">
+        <a href="../../Mateo/clothes.html"><img src="../../Mateo/images/shopping-cart-icon.png"></a>
+        </button>
+    </div>
+       <div class="login">
+        <button class="buton_login" id="open_login">
+            <img src="../../Mateo/images/profile-icon.png">
+        </button>
+       </div>
+    </div>
+
+<div class="container">
+    <div class="fotot" id="ipari">
+        <a href="../Faqet_e_vecanta/Shirt_1.html">
+        <img src="../Imazhet/Shirt_1.avif">
+        <div class="infot">
+        <h3>Soft Cotton Polo Shirt</h3>
+        <h4>Best selling</h4>
+        <p>3 colors</p>
+        <p class="cmimi">30 Euro</p>
+        </a>
+        <div class="buton">
+        <button onclick="window.location.href='../Faqet_e_vecanta/Shirt_1.html';">Buy</button>
+        </div>
+    </div>
+    </div>
+    <div class="fotot">
+        <a href="../Faqet_e_vecanta/Shirt_2.html">
+        <img src="../Imazhet/Shirt_2.avif">
+        <div class="infot">
+        <h3>Classic Fit Stretch Jersey Polo Shirt</h3>
+        <h4>New</h4>
+        <p>2 colors</p>
+        <p class="cmimi">50 Euro</p>
+        </a>
+        <div class="buton">
+            <button onclick="window.location.href='../Faqet_e_vecanta/Shirt_1.html';">Buy</button>
+        </div>
+    </div>
+    </div>
+    <div class="fotot">
+        <a href="../Faqet_e_vecanta/Shirt_3.html">
+        <img src="../Imazhet/Shirt_3.avif">
+        <div class="infot">
+        <h3>Classic Fit Performance Polo Shirt</h3>
+        <h4>New</h4>
+        <p>3 colors</p>
+        <p class="cmimi">40 Euro</p>
+    </a>
+    <div class="buton">
+        <button onclick="window.location.href='../Faqet_e_vecanta/Shirt_1.html';">Buy</button>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="container">
+    <div class="fotot">
+        <a href="../Faqet_e_vecanta/Shirt_4.html">
+        <img src="../Imazhet/Shirt_4.avif">
+        <div class="infot">
+        <h3>The Iconic Mesh Polo Shirt</h3>
+        <h4>Limited edition</h4>
+        <p>5 colors</p>
+        <p class="cmimi">70 Euro</p>
+        </a>
+        <div class="buton">
+            <button onclick="window.location.href='../Faqet_e_vecanta/Shirt_1.html';">Buy</button>
+        </div>
+    </div>
+    </div>
+    <div class="fotot">
+        <a href="../Faqet_e_vecanta/Shirt_5.html">
+        <img src="../Imazhet/Shirt_5.avif">
+        <div class="infot">
+        <h3>Lunar New Year Polo Bear Polo Shirt</h3>
+        <h4>Specail edition</h4>
+        <p>3 colors</p>
+        <p class="cmimi">55 Euro</p>
+        </a>
+        <div class="buton">
+            <button onclick="window.location.href='../Faqet_e_vecanta/Shirt_1.html';">Buy</button>
+        </div>
+    </div>
+    </div>
+    <div class="fotot">
+        <a href="../Faqet_e_vecanta/Shirt_6.html">
+        <img src="../Imazhet/Shirt_6.avif">
+        <div class="infot">
+        <h3>Flag-Embroidered Mesh Polo Shirt</h3>
+        <h4>New</h4>
+        <p>3 colors</p>
+        <p class="cmimi">45 Euro</p>
+        </a>
+        <div class="buton">
+            <button onclick="window.location.href='../Faqet_e_vecanta/Shirt_1.html';">Buy</button>
+        </div>
+    </div>
+    </div>
+</div>
+<dialog class="modal" id="modal" style="max-width: 600px;">
+    <form>
+        <div class="login_name" style="display: flex;">
+            <h1 style="margin-left: 160px; margin-right: 120px;height: 50px;">Login </h1>
+            <button style="width: 40px;height: 40px;" class="close_login">X</button>
+        </div>
+        <div class="login_username">
+            <input type="text" placeholder="Username" required style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+        </div>
+        <div class="login_password">
+            <input type="text" placeholder="Password" required style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+        </div>
+        <div class="finish_login"><button class="finish_login" style="margin-left: 150px;height: 40px;margin-bottom: 10px;">Login</button></div>
+        </form>
+</dialog>
+<script>
+     const body = document.body;
+     const modal=document.querySelector('#modal');
+     const openlogin=document.querySelector('#open_login');
+     const closelogin=document.querySelector('.close_login');
+
+     openlogin.addEventListener("click",()=>{
+        modal.showModal();
+        body.classList.add("modal-open");
+        
+    })
+
+    closelogin.addEventListener("click", ()=>{
+        modal.close();
+        body.classList.remove("modal-open");
+    })
+</script>
+
+</body>
+</html>

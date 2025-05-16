@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to bag</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            background-color: #893f45;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        form {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(254, 244, 230);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #893f45;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: white;
+            color: black;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: #893f45;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a64956;
+        }
+
+        .checkout {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .shipping-details,
+        .payment-details {
+            width: 47%;
+        }
+
+        .shipping-details input,
+        .payment-details input {
+            width: 100%;
+        }
+
+        .place-order-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .place-order-btn button {
+            width: 200px;
+        }
+
+        label[for="save-card-details"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            vertical-align: middle;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        Complete Your Purchase
+    </div>
+
+    <form action="/submit" method="post">
+        <div class="checkout">
+            <div class="shipping-details">
+                <h2>Shipping Details</h2>
+                <label for="name">First Name</label>
+                <input type="text" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" required>
+
+                <label for="cel">Phone Number</label>
+                <input type="text" required>
+
+                <label for="address-1">Address Line 1</label>
+                <input type="text" required>
+
+                <label for="address-2">Address Line 2 (optional)</label>
+                <input type="text">
+
+                <label for="zip-code">Zip Code</label>
+                <input type="text" required>
+
+                <label for="shipping-method">Shipping Method</label>
+                <select name="shipping-method" style="width: 102.5%;">
+                    <option value="standard">Standard</option>
+                    <option value="express">Express</option>
+                </select>
+            </div>
+
+            <div class="payment-details" style="margin-right: 15px;">
+                <h2>Payment Details</h2>
+                <label for="card-number">Card number</label>
+                <input type="text" required>
+
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" required>
+
+                <label for="billing-address">Billing Address</label>
+                <input type="text" required>
+
+                <label for="save-card-details">Save card details for future use</label>
+                <input type="checkbox">
+            </div>
+        </div>
+
+        <div class="place-order-btn">
+            <button>Place Order</button>
+        </div>
+    </form>
+</body>
+
+</html>

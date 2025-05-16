@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_foto.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <div class="koka" style="background-color: #893F45;">
+        <div class="logo" style="padding-right: 20px;">
+            <button class="buton_logo">
+                <a href="../Faqja_produkteve/faqja_produkteve.html"><img
+                        src="../../Mateo/images/logoShop.png"></a>
+            </button>
+        </div>
+        <div class="emri_dyqanit">
+            <h1 style="padding: 10px; color: white; padding-right: 774px ;">Clothing STORE/<a
+                    href="../Faqja_produkteve/faqja_produkteve.html" class="emri_link"><span
+                        style="font-size: 25px; color: white;">Men's Shirts</span></a></h1>
+        </div>
+        <div class="search">
+            <button class="buton_search">
+                <img src="../../Mateo/images/search-icon.jpg">
+            </button>
+        </div>
+        <div class="bag">
+            <button class="buton_bag">
+                <img src="../../Mateo/images/shopping-cart-icon.png">
+            </button>
+        </div>
+        <div class="login">
+            <button class="buton_login" id="open_login">
+                <img src="../../Mateo/images/profile-icon.png">
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="produkt">
+            <div class="foto">
+                <img src="../Imazhet/Shirt_2.avif">
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="emri">
+                <h1>Classic Fit Stretch Jersey Polo Shirt</h1>
+            </div>
+            <p>Polo Ralph Lauren</p>
+            <h3>New</h3>
+            <br>
+            <p>An American style standard since 1972, the Polo shirt has been imitated but never matched. Over the
+                decades, Ralph Lauren has reimagined his signature style in a wide array of colors and fits, yet all
+                retain the quality and attention to detail of the iconic original. This relaxed version is made with
+                luxe cotton interlock that features an ultrasoft finish.</p><br>
+            <h3>Product details:</h3>
+            <ul>
+                <div class="detaje">
+                    <li>Classic Fit: Cut fuller through the chest, waist, and sleeve, with a lower armhole that falls
+                        closer to the elbow.</li>
+                    <li>Size medium has a 29" body length (front and back), an 18" shoulder, and a 44" chest.</li>
+                    <li>Spread collar with concealed buttons at the points. Three-button placket.</li>
+                    <li>92% polyester, 8% elastane.</li>
+                </div>
+            </ul>
+            <br>
+            <h3>Size:</h3>
+            <br>
+            <form>
+                <div class="sizes">
+                    <label class="size_pick">
+                        <input type="radio" , name="size" id="size-clothes">
+                        <span>S</span>
+                    </label>
+                    <label class="size_pick" id="size-clothes">
+                        <input type="radio" , name="size">
+                        <span>M</span>
+                    </label>
+                    <label class="size_pick" id="size-clothes">
+                        <input type="radio" , name="size">
+                        <span>L</span>
+                    </label>
+                    <label class="size_pick" id="size-clothes">
+                        <input type="radio" , name="size">
+                        <span>XL</span>
+                    </label>
+                </div>
+                <br>
+                <h3>Color:</h3>
+                <br>
+                <div class="colors">
+                    <label class="color">
+                        <input type="radio" , name="color">
+                        <div class="border" style="background-color: cornflowerblue;" title="cornflowerblue"></div>
+                    </label>
+                    <label class="color">
+                        <input type="radio" , name="color">
+                        <div class="border" style="background-color:darkslateblue;" title="darkslateblue"></div>
+                    </label>
+                </div>
+                <br>
+                <h3>Quantity:</h3>
+                <br>
+                <div class="sasia">
+                    <button type="button" class="minus" id="decrease" onclick="ndryshoSasiDecrease()">-</button>
+                    <span id="sasi">1</span>
+                    <button type="button" class="plus" id="increase" onclick="ndryshoSasiIncrease()">+</button>
+                </div>
+            </form>
+            <br>
+            <h3>Price:<span id="price">30</span> Euro</h3>
+            <br>
+            <h3 id="stock">Available Stock:20</h3>
+            <div>
+                <button id="add-to-bag" onclick="openwind()">
+                    Add to Bag
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <dialog class="modal" id="modal" style="width: 400px;">
+        <form>
+            <div class="login_name" style="display: flex;">
+                <h1 style="margin-left: 160px; margin-right: 120px;">Login </h1>
+                <button style="width: 50px;font-size: 16px;border-radius: 10%;" class="close_login">X</button>
+            </div>
+            <div class="login_username">
+                <input type="text" placeholder="Username" required
+                    style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+            </div>
+            <div class="login_password">
+                <input type="text" placeholder="Password" required
+                    style="height: 40px; width: 200px; margin-left: 100px;margin-bottom: 10px;">
+            </div>
+            <div class="finish_login"><button class="finish_login"
+                    style="margin-left: 150px;font-size: 16px;border-radius: 10%;">Login</button></div>
+        </form>
+    </dialog>
+    <script>
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+        const price = document.querySelector(".price");
+        const body = document.body;
+        const html = document.documentElement;
+
+        let b = 50;
+        let a = 1;
+
+        plus.addEventListener("click", () => {
+            a++;
+            b = b + 50;
+            num.innerText = a;
+            price.innerText = b;
+            console.log(a);
+        })
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                b = b - 50;
+                price.innerText = b;
+                num.innerText = a;
+                console.log(a);
+            }
+        })
+
+        //modal popup
+        const modal = document.querySelector('#modal');
+        const openlogin = document.querySelector('#open_login');
+        const closelogin = document.querySelector('.close_login');
+
+        openlogin.addEventListener("click", () => {
+            modal.showModal();
+            body.classList.add("modal-open");
+
+        })
+
+        closelogin.addEventListener("click", () => {
+            modal.close();
+            body.classList.remove("modal-open");
+        })
+
+    </script>
+
+</body>
+
+</html>
